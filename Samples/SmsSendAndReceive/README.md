@@ -1,6 +1,6 @@
-﻿<!---
+<!---
   category: Communications
-  samplefwlink: http://go.microsoft.com/fwlink/p/?LinkId=620605&clcid=0x409
+  samplefwlink: http://go.microsoft.com/fwlink/p/?LinkId=620605
 --->
 
 # SMS send and receive sample
@@ -11,13 +11,14 @@ This sample shows how to use the SMS API (Windows.Devices.Sms) using following s
 
 ## Prerequisites
 
-This sample accesses privileged APIs and used by mobilebroadband operators.
-Hence requires restricted capability to be defined in package manifest.
+This sample accesses privileged APIs used by mobile broadband operators.
+Hence it requires a [special-use capability](https://msdn.microsoft.com/library/windows/apps/mt270968#special_and_restricted_capabilities)
+to be declared in package manifest.
 
 ### Remark
 
-- Since this sample uses restricted capability, this will fail WACK for restricted namespace test.
-- This also requires phone devices to be OEM developer unlocked.
+- This sample will not pass WACK because it uses a special-use capability.
+- This sample requires phone devices to be OEM developer unlocked.
 
 ### Reference
 
@@ -25,7 +26,7 @@ Hence requires restricted capability to be defined in package manifest.
 
 ## System requirements
 
-**Hardware:** Phone device or PC with mobilebroadband modem
+**Hardware:** Phone device or PC with mobile broadband modem
 
 **Client:** Windows 10 
 
